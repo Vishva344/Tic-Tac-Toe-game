@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f2f2f2;
+      }
+
+      h1 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 36px;
+      }
+
+      #board {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        border: 3px solid #333;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+
+      .square {
+        width: 33.33%;
+        height: 100px;
+        border: 1px solid #ccc;
+        font-size: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .square:hover {
+        background-color: #eee;
+      }
+
+      .square.X {
+        color: #f44336;
+      }
+
+      .square.O {
+        color: #2196f3;
+      }
+
+      #reset-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 20px;
+        background-color: #ddd;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      #reset-button:hover {
+        background-color: #bbb;
+      }
+
+      #turn {
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <p id="turn"></p>
+    <div id="board">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+    <button id="reset-button">Reset</button>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
